@@ -28,37 +28,38 @@ function Index(props) {
   };
 
   return (
-    <section>
+    <section className = "formcontainer">
+      <div class = "hero glitch layers" data-text="#"><span>#</span></div>
       <form onSubmit={handleSubmit}>
-        <input
+        <input className= "Var1"
           type="float"
           value={newForm.var1}
           name="var1"
           placeholder="1st Variable"
           onChange={handleChange}
         />
-        <input
+        <input className= "Sign"
           type="text"
           value={newForm.sign}
           name="sign"
           placeholder="Sign"
           onChange={handleChange}
         />
-        <input
+        <input className = "Var2"
           type="float"
           value={newForm.var2}
           name="var2"
           placeholder="2nd Variable"
           onChange={handleChange}
         />
-        <input
+        <input className = "Total"
           type="float"
           value={newForm.total}
           name="total"
           placeholder="Total"
           onChange={handleChange}
         />
-        <input type="submit" value="Create Calculation" />
+        <input className = "Calculate" type="submit" value="CALCULATE!" />
       </form>
     </section>
   );

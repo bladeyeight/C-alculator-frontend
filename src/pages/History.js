@@ -14,10 +14,7 @@ function History(props) {
     const loaded = () => {
         return props.calculations.map((calculation) => (
           <div key={calculation._id} className="calculation">
-            <h1>{calculation.var1}</h1>
-            <h3> {calculation.sign}  </h3>
-            <h3>{calculation.var2}</h3>
-            <h3>= {calculation.total}</h3>
+            <h1>{calculation.var1}{calculation.sign}{calculation.var2}={calculation.total}</h1>
             <button id="delete" onClick={() => removeCalculation(calculation.id)}>
         DELETE
       </button>
@@ -30,7 +27,7 @@ function History(props) {
       };
 
     return (
-        <section>
+        <section className = "historycontainer">
             {props.calculations ? loaded() : loading()}
         </section>
     )

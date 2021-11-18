@@ -4,7 +4,7 @@ function Header(props) {
   return (
     <nav className="nav">
       <Link to="/">
-        <div>C#alcuator</div>
+        <div>Calculator</div>
       </Link>
       <Link to="/history">
         <div>History</div>
