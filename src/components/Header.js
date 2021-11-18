@@ -6,6 +6,9 @@ function Header(props) {
       <Link to="/">
         <div>C#alcuator</div>
       </Link>
+      <Link to="/history">
+        <div>History</div>
+      </Link>
     </nav>
   );
 }

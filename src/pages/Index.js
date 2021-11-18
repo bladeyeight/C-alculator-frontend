@@ -18,30 +18,13 @@ function Index(props) {
   // handle submit function for form
   const handleSubmit = (event) => {
     event.preventDefault();
-    props.createCalcuations(newForm);
+    props.createCalculations(newForm);
     setNewForm({
       var1: "",
     sign: "",
     var2: "",
     total: "",
     });
-  };
-
-  // loaded function
-  const loaded = () => {
-    return props.calculations.map((calculation) => (
-      <div key={calculation._id} className="calculation">
-        <Link to={`/calculations/${calculation._id}`}><h1>{calculation.var1}</h1>
-        <h3> {calculation.sign}  </h3>
-        <h3>{calculation.var2}</h3>
-        <h3>{calculation.total}</h3>
-        </Link>
-      </div>
-    ));
-  };
-
-  const loading = () => {
-    return <h1>Loading...</h1>;
   };
 
   return (
@@ -77,7 +60,6 @@ function Index(props) {
         />
         <input type="submit" value="Create Calculation" />
       </form>
-      {props.calculations ? loaded() : loading()}
     </section>
   );
 }

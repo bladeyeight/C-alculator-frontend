@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Index from "../pages/Index";
-import Show from "../pages/Show";
+import History from "../pages/History";
 
 function Main(props) {
   const [ calculations, setCalculations ] = useState(null);
@@ -26,6 +26,14 @@ function Main(props) {
     // update list of calcuations
     getCalculations();
   };
+  const deleteCalculations = async id => {
+    // make delete request to create calculations
+    await fetch(URL + id, {
+      method: "DELETE",
+    })
+    // update list of calculations
+    getCalculations();
+  }
 
   useEffect(() => getCalculations(), []);
 
@@ -35,13 +43,14 @@ function Main(props) {
         <Route exact path="/" element={
           <Index calculations={calculations} createCalculations={createCalculations}/>} />
         <Route
-          path="/calculations/:id"
-          render={(rp) => (
-            <Show
-              {...rp}
+          path="/history" element = {
+            
+            <History 
+            calculations={calculations}
+            deleteCalculations={deleteCalculations}
             />
-          )}
-        />
+          }
+            />
       </Routes>
     </main>
   );
