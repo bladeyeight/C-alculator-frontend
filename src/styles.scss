@@ -14,10 +14,14 @@ body {
 
 ::placeholder {
   font-family: 'Digital Dream';
+  justify-content: center;
 }
 
 .formcontainer {
-
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .Var1{
@@ -25,14 +29,19 @@ body {
   color: lime;
   background-color: black;
   border: none;
+text-align: center;
+margin-top: 10px;
+margin-bottom: 10px;
 }
 
 .Sign{
-  margin: 20px;
   font-family: 'Digital Dream';
   color: lime;
   background-color: black;
   border: none;
+  text-align: center;
+  margin-top: 10px;
+margin-bottom: 10px;
 }
 
 .Var2{
@@ -40,6 +49,9 @@ body {
   color: lime;
   background-color: black;
   border: none;
+  text-align: center;
+  margin-top: 10px;
+margin-bottom: 10px;
 }
 
 .Total{
@@ -47,11 +59,14 @@ body {
   color: lime;
   background-color: black;
   border: none;
+  text-align: center;
+  margin-top: 10px;
+margin-bottom: 10px;
   
 }
 
 .totalLoad {
-  font-size: 14px;
+  font-size: 10px;
 }
 
 .Calculate {

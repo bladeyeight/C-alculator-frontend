@@ -48,12 +48,15 @@ function Index(props) {
   const loaded = () => {
     handleCalculation(newForm);
     return (
+      <div className = "Total">
+      <label for = "total">Total:</label>
     <input className = "Total"
     type="float"
     value={newForm.total}
     name="total"
     placeholder="Total"
   />
+    </div>
     )};
 
   const loading = () => {
