@@ -44,7 +44,7 @@ function Index(props) {
     var2: "",
     total: "",
     });
-  }else {window.alert("Fill in all fields to save!")
+  }else {window.alert("Fill in all fields")
 
   }
 };
@@ -64,7 +64,7 @@ function Index(props) {
     )};
 
   const loading = () => {
-    return <h1 className ="totalLoad">Fill in all fields</h1>;
+    return <h1 className ="totalLoad">Fill in all fields</h1>
   };
 
 
