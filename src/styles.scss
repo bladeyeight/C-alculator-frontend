@@ -16,6 +16,10 @@ body {
   font-family: 'Digital Dream';
 }
 
+.formcontainer {
+
+}
+
 .Var1{
   font-family: 'Digital Dream';
   color: lime;
@@ -24,6 +28,7 @@ body {
 }
 
 .Sign{
+  margin: 20px;
   font-family: 'Digital Dream';
   color: lime;
   background-color: black;
@@ -42,13 +47,19 @@ body {
   color: lime;
   background-color: black;
   border: none;
+  
+}
+
+.totalLoad {
+  font-size: 14px;
 }
 
 .Calculate {
   color: lime;
   background-color: black;
   font-family: 'Digital Dream';
-  border: none;
+  border-color: lime;
+  font-size: 20px;
 }
 
 // Glitch CSS 
@@ -526,6 +537,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.deleteHistory {
+  background-color: red;
+  border: none;
 }
 
 

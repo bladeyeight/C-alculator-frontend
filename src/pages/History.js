@@ -15,7 +15,7 @@ function History(props) {
         return props.calculations.map((calculation) => (
           <div key={calculation._id} className="calculation">
             <h1>{calculation.var1}{calculation.sign}{calculation.var2}={calculation.total}</h1>
-            <button id="delete" onClick={() => removeCalculation(calculation.id)}>
+            <button className = "deleteHistory" id="delete" onClick={() => removeCalculation(calculation.id)}>
         DELETE
       </button>
           </div>
