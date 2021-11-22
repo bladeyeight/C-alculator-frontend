@@ -35,6 +35,7 @@ function Index(props) {
 
   // handle submit function for form
   const handleSubmit = (event) => {
+    if (newForm.var1 && newForm.var2 && newForm.sign &&newForm.total){
     event.preventDefault();
     props.createCalculations(newForm);
     setNewForm({
@@ -43,7 +44,10 @@ function Index(props) {
     var2: "",
     total: "",
     });
-  };
+  }else {window.alert("Fill in all fields to save!")
+
+  }
+};
 
   const loaded = () => {
     handleCalculation(newForm);
