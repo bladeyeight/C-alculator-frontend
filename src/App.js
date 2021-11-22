@@ -1,6 +1,6 @@
 import "./App.css";
-import Header from "/Users/Alice/Documents/GA/C/cscalc-front/src/components/Header.js";
-import Main from "/Users/Alice/Documents/GA/C/cscalc-front/src/components/Main.js";
+import Header from "./components/Header";
+import Main from "./components/Main";
 
 function App() {
   return (
