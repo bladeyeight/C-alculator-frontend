@@ -20,7 +20,7 @@ A simple web application that allows you to multiply, add, divide, and subtract 
 
 [Click Here](https://ccalculator.netlify.app/) to go to the app and choose two variables and a sign (+, - , / , *) to get to work!
 
-## Future Enhancedments
+## Future Enhancements
 
 - add User Auth
 - make input fields easier to use on mobile
