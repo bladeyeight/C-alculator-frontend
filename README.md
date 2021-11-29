@@ -14,7 +14,7 @@ A simple web application that allows you to multiply, add, divide, and subtract 
 
 ## Screenshots
 
-![what it looks like](https://imgur.com/a/oXEHFlc)
+![what it looks like](https://imgur.com/TSP1zW7)
 
 ## Getting Started
 
